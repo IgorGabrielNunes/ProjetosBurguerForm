@@ -7,7 +7,9 @@
         <div>Pão:</div>
         <div>Carne:</div>
         <div>Opcionais:</div>
-        <div>Ações:</div>
+        <div>Ações:
+          
+        </div>
       </div>
     </div>
     <div id="burger-table-rows">
