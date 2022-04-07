@@ -38,7 +38,7 @@
             </option>
           </select>
           <button class="delete-btn" @click="deleteBurger(burger.id)">
-            Cancelar
+            Remover pedido
           </button>
         </div>
       </div>
@@ -59,7 +59,7 @@ export default {
   methods: {
     async getPedidos () {
 
-      const req = await fetch('http://localhost:3000/burgers');
+      const req = await fetch('http://localhost:3001/burgers');
 
       const data = await req.json();
 
@@ -70,7 +70,7 @@ export default {
       this.getStatus();
     },
     async getStatus() {
-      const req = await fetch('http://localhost:3000/status');
+      const req = await fetch('http://localhost:3001/status');
 
       const data = await req.json();
 
@@ -79,7 +79,7 @@ export default {
       this.status = data;
     },
     async deleteBurger(id) {
-      const req = await fetch(`http://localhost:3000/burgers/${id}`, {
+      const req = await fetch(`http://localhost:3001/burgers/${id}`, {
         method: "DELETE"
       });
 
@@ -92,7 +92,7 @@ export default {
     async updatedBurger(event, {id}) {
       const option = event.target.value;
       const dataJson = JSON.stringify({ status: option });
-      const req = await fetch(`http://localhost:3000/burgers/${id}`, {
+      const req = await fetch(`http://localhost:3001/burgers${id}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json"},
         body: dataJson

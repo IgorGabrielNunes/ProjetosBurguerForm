@@ -5,8 +5,8 @@
     </router-link>
     <router-link to="/">Home</router-link> 
     <router-link to="/pedidos">Pedidos</router-link>
-    <router-link to="/Cadastro">Cadastro</router-link>
-    <router-link to="/Login">Login</router-link>
+    <router-link to="/cadastro">Cadastro</router-link>
+    <router-link to="/login">Login</router-link>
   </div>
 
 </template>

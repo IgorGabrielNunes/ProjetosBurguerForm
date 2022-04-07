@@ -15,7 +15,7 @@ export default {
   },
   data() {
     return {
-      logo_src:"../logo.png",
+      logo_src:"../faviconelyte.ico",
       app_name: "Make your Burguer"
     }
   }

@@ -2,22 +2,18 @@
     <form id="login-form" @submit="loginForm">
 
       <div class="input-container">
-      <label for="nome">Digite seu email:</label>
+      <label>Digite seu email:</label>
       <input
         type="text"
-        id="nomecompleto"
-        nome="nomecompleto"
         v-model="email"
         placeholder="Digite seu email!"
       />
       </div>
       
       <div class="input-container">
-      <label for="email">Digite sua senha::</label>
+      <label>Digite sua senha:</label>
       <input
         type="text"
-        id="email"
-        nome="email"
         v-model="senha"
         placeholder="Digite sua senha!"
       />
@@ -30,10 +26,8 @@
 </template>
 
  <script>
- import Login from "../views/Login.vue"
  
  export default {
-   components: Login,
    name: "LoginPage",
    
    data () {

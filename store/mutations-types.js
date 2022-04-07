@@ -1,0 +1,2 @@
+export const SET_USER = "COMPONENTS/SET_USER"
+export const SET_TOKEN = "COMPONENTS/SET_TOKEN"

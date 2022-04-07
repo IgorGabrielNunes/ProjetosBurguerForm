@@ -1,11 +1,9 @@
 <template>
-  <form id="cadastro-form" @submit="createCadastro">
+  <form id="cadastro-form">
     <div class="input-container">
       <label for="nome">Nome Completo:</label>
       <input
         type="text"
-        id="nomecompleto"
-        nome="nomecompleto"
         v-model="nomecompleto"
         placeholder="Digite seu nome!"
       />
@@ -14,8 +12,6 @@
       <label for="email">Email:</label>
       <input
         type="text"
-        id="email"
-        nome="email"
         v-model="email"
         placeholder="Digite seu email!"
       />
@@ -25,8 +21,6 @@
       <label for="senha">Senha:</label>
       <input
         type="password"
-        id="senha"
-        nome="senha"
         v-model="senha"
         placeholder="Digite sua senha!"
       />
@@ -36,8 +30,6 @@
       <label for="senha">Confirme sua senha:</label>
       <input
         type="password"
-        id="senha"
-        nome="senha"
         v-model="senha"
         placeholder="Confirme sua senha!"
       />
@@ -47,24 +39,20 @@
       <label for="nomeuser">Nome de usuario:</label>
       <input
         type="text"
-        id="nomeuser"
-        nome="nomeuser"
         v-model="nomeuser"
         placeholder="Digite seu nome de usuario!"
       />
     </div>
 
     <div class="input-container">
-      <input type="submit" class="submit-btn" value="Cadastrar" />
+      <input type="submit" class="submit-btn" value="Cadastrar" @click.prevent="createCadastro" />
     </div>
   </form>
 </template>
 
 <script>
-import Cadastro from "../views/Cadastro.vue";
 
 export default {
-  components: { Cadastro }, 
   name: "CadastroLogin",
   data() {
       return {
@@ -99,7 +87,7 @@ export default {
 
     const dataJson = JSON.stringify(data);
        
-        const req = await fetch("http://localhost:3000/Usuarios", {
+        const req = await fetch("http://localhost:3000/usuarios", {
           method: "POST",
         headers: { "Content-Type" : "application/json" },
         body: dataJson
@@ -139,7 +127,7 @@ select {
 .submit-btn {
   background-color: rgb(255, 0, 0);
   color: #ffffff;
-  font-weight: bodl;
+  font-weight: bold;
   border: 2px solid rgb(255, 0, 0);
   padding: 10px;
   font-size: 16px;
