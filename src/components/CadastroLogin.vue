@@ -99,7 +99,7 @@ export default {
 
     const dataJson = JSON.stringify(data);
        
-        const req = await fetch("http://localhost:3000/cadastro", {
+        const req = await fetch("http://localhost:3000/Usuarios", {
           method: "POST",
         headers: { "Content-Type" : "application/json" },
         body: dataJson
