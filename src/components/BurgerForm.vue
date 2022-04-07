@@ -136,7 +136,7 @@ label {
   margin-bottom: 15px;
   color: black;
   padding: 5px 10px;
-  border-left: 4px solid #fcba03;
+  border-left: 4px solid #fc0303;
 }
 input,
 select {
@@ -167,7 +167,7 @@ opcionais-title {
 }
 .submit-btn {
   background-color: #222;
-  color: #fcba03;
+  color: #fc0303;
   font-weight: bodl;
   border: 2px solid #222;
   padding: 10px;

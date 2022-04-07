@@ -1,6 +1,10 @@
 <template>
   <footer id="footer">
-    <span>Desenvolvimento: Departamento de TI - Fundimisa © 2020</span>
+    <img src="../../public/logo-branco.png" />
+    <h1>Contato</h1>
+    <span>E-mail: contato@elyte.ind.br</span> 
+    <span>Telefone:(55)9 9886-7720</span><br>
+    <span>Desenvolvimento: Departamento de TI - Fundimisa © 2020</span> <br>
   </footer>
 </template>
 

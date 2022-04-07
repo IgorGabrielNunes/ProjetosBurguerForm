@@ -96,7 +96,7 @@
         "Cheddar",
         "Bacon"
       ],
-      "status": "Em produção",
+      "status": "Finalizado",
       "id": 2
     },
     {
@@ -106,7 +106,54 @@
       "opcionais": [
         "Cheddar"
       ],
-      "status": "Solicitado",
+      "status": "Finalizado",
+      "id": 3
+    },
+    {
+      "nome": "saas",
+      "carne": "Maminha",
+      "pao": "3 Queijos",
+      "opcionais": [
+        "Bacon"
+      ],
+      "status": "Em produção",
+      "id": 4
+    },
+    {
+      "nome": "zfdfd",
+      "carne": "Maminha",
+      "pao": "3 Queijos",
+      "opcionais": [
+        "Bacon"
+      ],
+      "status": "Em produção",
+      "id": 5
+    }
+  ],
+  "dadoscadastro": [],
+  "cadastro": [
+    {
+      "nomecompleto": "afas",
+      "email": "asfsaf",
+      "senha": "saf",
+      "nomeuser": "asf",
+      "status": "Criado!",
+      "id": 1
+    },
+    {
+      "nomecompleto": "asgfas",
+      "email": "fasfsaf",
+      "senha": "safasf",
+      "nomeuser": "asfsa",
+      "status": "Criado!",
+      "id": 2
+    },
+    {
+      "nomecompleto": "sggsd",
+      "email": "s\\gs\\gs\\",
+      "senha": "gdsgds",
+      "nomeuser": "sdgsd",
+      "status": "Criado!",
       "id": 3
     }
   ]

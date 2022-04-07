@@ -5,6 +5,8 @@
     </router-link>
     <router-link to="/">Home</router-link> 
     <router-link to="/pedidos">Pedidos</router-link>
+    <router-link to="/Cadastro">Cadastro</router-link>
+    <router-link to="/Login">Login</router-link>
   </div>
 
 </template>
@@ -18,8 +20,8 @@ export default {
 
 <style scoped>
   #nav {
-    background-color: #222;
-    border-bottom: 4px solid #111;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 4px solid rgb(255, 0, 0);
     padding: 15px 50px;
     display: flex;
     justify-content: flex-end;
@@ -34,13 +36,13 @@ export default {
     height: 40px;
   }
   #nav a {
-    color: #FCBA03;
+    color: #000000;
     text-decoration: none;
     margin: 12px;
     transition: .5s;
   }
   #nav a:hover {
-    color: #FFF;
+    color: rgb(255, 0, 0);
 
   }
 </style>
